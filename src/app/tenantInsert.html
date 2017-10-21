@@ -1,0 +1,11 @@
+<div *ngIf="tenant">
+  <h2>Edit {{tenant.firstName}}, {{tenant.lastName}}</h2>
+  <div>
+    <label>name: </label>
+    <input [(ngModel)]="tenant.firstName" placeholder="firstName"/>
+    <input [(ngModel)]="tenant.lastName" placeholder="lastName"/>
+    <input [(ngModel)]="tenant.email" placeholder="email"/>
+    <input type="date" [(ngModel)]="tenant.start" placeholder="yyyy-MM-dd" required/>
+    <input type="date" [(ngModel)]="tenant.end" placeholder="yyyy-MM-dd" required/>
+  </div>
+</div>
